@@ -1,0 +1,442 @@
+/* =====================================================
+   ESTILOS GERAIS — ASSOCIAÇÃO SANTO ANDRÉ
+   ===================================================== */
+
+:root {
+  --primaria: #2a9d8f;
+  --secundaria: #f4a261;
+  --fundo: #f5f5f5;
+  --texto: #333;
+  --claro: #ffffff;
+  --escuro: #1e1e1e;
+  --borda: #e0e0e0;
+  --sombra: rgba(0, 0, 0, 0.15);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* CONTAINERS */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* =====================================================
+   CABEÇALHO E MENU
+   ===================================================== */
+.site-header {
+  background-color: var(--primaria);
+  color: var(--claro);
+  padding: 0.8rem 0;
+  box-shadow: 0 2px 8px var(--sombra);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: var(--claro);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--secundaria);
+}
+
+/* MENU HAMBURGUER */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--claro);
+  cursor: pointer;
+}
+
+.dark-toggle {
+  background: none;
+  border: none;
+  color: var(--claro);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* =====================================================
+   HERO / BANNER PRINCIPAL
+   ===================================================== */
+.hero {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.hero-banner {
+  
+  position: relative;
+  overflow: visible; 
+  border-radius: 25px;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto; 
+  display: block;
+  border-radius: 25px;
+}
+
+.hero-content {
+  
+  position: relative;
+  margin: 1rem auto 0;
+  color: var(--claro);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.btn {
+  background-color: var(--secundaria);
+  color: var(--claro);
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e38b40;
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   QUEM SOMOS E MISSÃO / VISÃO / VALORES
+   ===================================================== */
+.quem-somos, .missao-valores {
+  background: var(--claro);
+  border: 3px solid var(--secundaria);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 3rem 0;
+  box-shadow: 0 5px 10px var(--sombra);
+}
+
+.quem-somos h2, .missao-valores h2 {
+  text-align: center;
+  color: var(--primaria);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.quem-somos-container, .missao-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.quem-somos-container img, .missao-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.quem-somos-texto, .mvv-texto {
+  flex: 1 1 400px;
+  font-size: 1.1rem;
+}
+
+/* =====================================================
+   SEÇÕES GERAIS
+   ===================================================== */
+.about, .contact, .stats, .projetos {
+  margin-top: 3rem;
+}
+
+.about h2, .contact h2, .stats h3, .projetos h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primaria);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card-info {
+  background: var(--claro);
+  border: 3px solid var(--secundaria);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--sombra);
+  transition: all 0.3s ease;
+}
+
+.card-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px var(--sombra);
+}
+
+/* =====================================================
+   FORMULÁRIO DE CADASTRO
+   ===================================================== */
+form {
+  background: var(--claro);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px var(--sombra);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--primaria);
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+  margin-top: 0.3rem;
+}
+
+button {
+  margin-top: 1rem;
+  background-color: var(--primaria);
+  color: var(--claro);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secundaria);
+}
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+.site-footer {
+  background-color: var(--primaria);
+  color: var(--claro);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+/* =====================================================
+   MODO ESCURO
+   ===================================================== */
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode .site-header {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .card-info,
+.dark-mode form {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+/* =====================================================
+   RESPONSIVIDADE
+   ===================================================== */
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--primaria);
+    padding: 1rem;
+  }
+
+  .main-nav.active ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-banner img {
+    height: 280px;
+  }
+
+  .quem-somos-container,
+  .missao-container {
+    flex-direction: column;
+  }
+}
+
+/* =====================================================
+   ANIMAÇÕES SUAVES
+   ===================================================== */
+.card-info, .hero-content, .about, .contact, .stats, .project-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================= */
+/*   Apoie um Projeto        */
+/* ========================= */
+
+.about {
+  background: var(--claro);
+  border: 3px solid var(--secundaria);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 3rem 0;
+  box-shadow: 0 5px 10px var(--sombra);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  flex: 1;
+}
+
+ .about-texto p {
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   Sessão: PÁGINA DE PROJETOS
+   Imagens dos cards dos projetos
+   =============================== */
+.project-card img {
+  width: 90% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Apoie um Projeto index —  */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 450px; /* você pode aumentar se quiser */
+  border-radius: 12px;
+  flex: 1;
+}
+
+.about-texto {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+
+
+

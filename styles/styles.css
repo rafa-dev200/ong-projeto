@@ -1,0 +1,259 @@
+:root {
+  --cor-principal: #2a9d8f;
+  --cor-secundaria: #e9c46a;
+  --cor-fundo: #f8f9fa;
+  --cor-texto: #333;
+  --cor-branca: #fff;
+  --cor-escura: #264653;
+  --cor-hover: #f4a261;
+  --transicao: all 0.3s ease;
+  --radius: 8px;
+  --espacamento: 1.5rem;
+}
+
+/* ======== RESETAÇÃO ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+/* ======== CABEÇALHO ======== */
+.site-header {
+  background-color: var(--cor-principal);
+  color: var(--cor-branca);
+  padding: 1rem 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: var(--cor-branca);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transicao);
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--cor-secundaria);
+}
+
+/* ======== MENU HAMBÚRGUER ======== */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--cor-branca);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ======== SEÇÃO HERO ======== */
+.hero {
+  position: relative;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--cor-branca);
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  width: 80%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--cor-secundaria);
+  color: var(--cor-escura);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--transicao);
+}
+
+.btn:hover {
+  background-color: var(--cor-hover);
+}
+
+/* ======== SEÇÃO SOBRE ======== */
+.about {
+  margin: var(--espacamento) 0;
+  background-color: var(--cor-branca);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--cor-escura);
+}
+
+/* ======== CONTATO ======== */
+.contact {
+  text-align: center;
+  background-color: var(--cor-principal);
+  color: var(--cor-branca);
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: var(--espacamento) 0;
+}
+
+.contact a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ======== NÚMEROS ======== */
+.stats {
+  text-align: center;
+  background: var(--cor-branca);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stats ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stats li strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--cor-principal);
+}
+
+/* ======== RODAPÉ ======== */
+.site-footer {
+  background-color: var(--cor-escura);
+  color: var(--cor-branca);
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  transition: var(--transicao);
+}
+
+.social-links a:hover {
+  color: var(--cor-hover);
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--cor-principal);
+    padding: 1rem;
+    border-radius: var(--radius);
+  }
+
+  .main-nav.active ul {
+    display: flex;
+  }
+
+  
+  .menu-toggle {
+    display: block;
+  }
+
+  /* --- IMAGENS DAS PÁGINAS index --- */
+.img-40 {
+  width: 40%;
+  height: auto;
+}
+
+.img-45 {
+  width: 45%;
+  height: auto;
+}
+/* --- IMAGENS DAS PÁGINAS  projetos--- */
+.card img.img-55 {
+  width: 60%;
+  height: auto;
+}
+
+}
+
+.img-45 {
+  width: 60%;
+  height: auto;
+}
+/* --- IMAGENS DAS PÁGINAS  cadastro --- */
+.img-45 {
+  width: 45%;
+  height: auto;
+}
+
+
+

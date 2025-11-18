@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos sociais da Associação Santo André.">
+  <meta name="author" content="Rafael de Souza">
+  <title>Projetos — Associação Santo André</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="scripts/scripts.js"></script>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-container">
+      <h1 class="logo">Associação Santo André</h1>
+
+      <!-- Botão mobile -->
+      <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+
+      <!-- Navegação -->
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" class="active">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+
+    <!-- Seção de projetos -->
+    <section class="projects">
+      <h2>Projetos em Andamento</h2>
+
+      <!-- Lista de cards -->
+      <div class="cards">
+
+        <!-- Projeto Educação -->
+        <div class="card">
+          <img src="img/projeto-educacao.jpg.png"
+          srcset="img/projeto-educacao.webp 1x, img/projeto-educacao.jpg.png 2x"
+          alt="Crianças estudando em aula de reforço escolar"
+          class="img-55">
+          <h3>Educação</h3>
+          <p>Aulas e reforço escolar gratuitos para crianças e jovens das comunidades de Santo André.</p>
+        </div>
+
+        <!-- Projeto Meio Ambiente -->
+        <div class="card">
+        <img src="img/projeto-meio-ambiente.jpg.png"
+        srcset="img/projeto-meio-ambiente.webp 1x, img/projeto-meio-ambiente.jpg.png 2x"
+        alt="Voluntários cuidando do meio ambiente em Santo André"
+        class="img-55">
+
+          <h3>Meio Ambiente</h3>
+          <p>Campanhas de reciclagem, plantio de árvores e mutirões de limpeza em praças e parques da cidade.</p>
+        </div>
+
+        <!-- Projeto Combate à Fome -->
+        <div class="card">
+          <img src="img/projeto-combate-fome.jpg.png"
+          srcset="img/projeto-combate-fome.webp 1x, img/projeto-combate-fome.jpg.png 2x"
+          alt="Entrega de alimentos a famílias carentes no bairro Santa Cristina"
+          class="img-45">
+          <h3>Combate à Fome</h3>
+          <p>Distribuição de alimentos e apoio a famílias em situação de vulnerabilidade no Jardim Santa Cristina.</p>
+        </div>
+
+        <!-- Projeto Meio Ambiente (extra) -->
+        <div class="card">
+          <img src="img/projeto-meio-ambiente.jpg.png"
+          srcset="img/projeto-meio-ambiente.webp 1x, img/projeto-meio-ambiente.jpg.png 2x"
+          alt="Voluntários plantando árvores em Santo André"
+          class="img-45">
+          <h3>Projeto Meio Ambiente</h3>
+          <p>Plantio de árvores nativas, limpeza de áreas verdes e ações de conscientização ambiental no Grande ABC.</p>
+        </div>
+
+      </div> <!-- /cards -->
+    </section>
+
+    <!-- Chamada para ação -->
+    <div class="apoio">
+      <p>💛 Quer ajudar a transformar vidas na nossa comunidade?</p>
+      <a href="cadastro.html" class="btn">Quero Ajudar / Me Cadastrar</a>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© <span id="year"></span> Associação Santo André — Solidariedade e Ação</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

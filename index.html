@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Associação Santo André — projetos, voluntariado e doações.">
+  <meta name="author" content="Rafael de Souza">
+  <title>Associação Santo André — Solidariedade e Ação</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="scripts/scripts.js"></script>
+
+  <style>
+    .img-40 { width: 40%; height: auto; }
+    .img-45 { width: 45%; height: auto; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-container">
+      <h1 class="logo">Associação Santo André</h1>
+
+      <!-- Botão mobile -->
+      <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+
+      <!-- Menu navegação -->
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+
+    <!-- Banner -->
+    <section class="hero">
+      <img src="img/index-banner.jpg.png"
+      srcset="img/index-banner.webp 1x, img/index-banner.jpg.png 2x"
+      alt="Voluntários da Associação Santo André ajudando na comunidade"
+      class="hero-img img-40">
+
+      <div class="hero-content">
+        <h2>Transformando vidas com ações locais</h2>
+        <p>Somos uma organização sem fins lucrativos dedicada a promover inclusão e cidadania.</p>
+        <a href="projetos.html" class="btn btn-primary">Conheça nossos projetos</a>
+      </div>
+    </section>
+
+    <!-- Quem somos -->
+    <section class="about">
+      <h2>Quem Somos</h2>
+
+      <img src="img/index-quem-somos.jpg.png"
+      srcset="img/index-quem-somos.webp 1x, img/index-quem-somos.jpg.png 2x"
+      alt="Equipe de voluntários da Associação Santo André reunida"
+      class="about-img img-45">
+
+      <p>A Associação Santo André atua há mais de 10 anos desenvolvendo projetos sociais nas áreas de educação, meio ambiente e combate à fome.</p>
+    </section>
+
+    <!-- Missão, visão e valores -->
+    <section class="about">
+      <h2>Missão, Visão e Valores</h2>
+
+      <img src="img/index-missao-valores.jpg.png"
+      srcset="img/index-missao-valores.webp 1x, img/index-missao-valores.jpg.png 2x"
+      alt="Imagem representando missão, visão e valores sociais"
+      class="about-img img-45">
+
+      <div class="about-grid">
+        <div>
+          <h3>Missão</h3>
+          <p>Conectar recursos e pessoas para gerar impacto social e transformar vidas.</p>
+        </div>
+        <div>
+          <h3>Visão</h3>
+          <p>Ser referência em transparência, solidariedade e engajamento comunitário.</p>
+        </div>
+        <div>
+          <h3>Valores</h3>
+          <p>Respeito, ética, empatia e compromisso com o bem coletivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact">
+      <h2>Contato</h2>
+      <address>
+        <p>📍 Rua das Palmeiras, 250 - Jardim Santa Cristina, Santo André/SP</p>
+        <p>📞 Telefone: (11) 99999-9999</p>
+        <p>✉️ E-mail: <a href="mailto:contato@associacaosantoandre.org">contato@associacaosantoandre.org</a></p>
+      </address>
+    </section>
+
+    <!-- Nossos números -->
+    <aside class="stats">
+      <h3>Nossos Números</h3>
+      <ul>
+        <li><strong>+300</strong> voluntários ativos</li>
+        <li><strong>15</strong> projetos em andamento</li>
+        <li><strong>+5.000</strong> famílias beneficiadas</li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© <span id="year"></span> Associação Santo André — Solidariedade e Ação</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

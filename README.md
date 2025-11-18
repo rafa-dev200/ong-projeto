@@ -64,7 +64,7 @@ Implementações realizadas:
 ##  Deploy
 Acesse o projeto publicado:
 
-🔗 **https://rafa-dev200.github.io/ong-associacao-projeto/**
+🔗 **https://rafa-dev200.github.io/ong-projeto/**
 
 ---
 
